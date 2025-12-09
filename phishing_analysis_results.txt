@@ -1,0 +1,201 @@
+PHISHING EMAIL ANALYSIS RESULTS
+================================================================================
+
+
+EMAIL 1
+================================================================================
+File: email/sample-1.eml
+Subject: CLIENTE PRIME - BRADESCO LIVELO: Seu cartão tem 92.990 pontos LIVELO expirando hoje!
+From: BANCO DO BRADESCO LIVELO <banco.bradesco@atendimento.com.br>
+
+ANALYSIS:
+--------------------------------------------------------------------------------
+### Phishing Email Analysis
+
+1. **Phishing Risk Score**: 85
+2. **Risk Level**: HIGH
+
+3. **Indicators Found**:
+   - Suspicious sender domain (atendimento.com.br does not match the official Bradesco domain)
+   - Urgent or threatening language (immediate action required to avoid losing points)
+   - Requests for personal/financial information (implied through urgency to redeem points)
+   - Suspicious URLs (link to a domain that appears unrelated to Bradesco)
+   - Poor grammar or spelling (multiple grammatical errors and awkward phrasing)
+   - Generic greetings (no personalized greeting)
+   - SPF/DKIM authentication failures (indicated by SPF temp error and DKIM not signed)
+
+4. **Explanation**:
+   - **Suspicious Sender Domain**: The email claims to be from "BANCO DO BRADESCO LIVELO," but the sender's domain is "atendimento.com.br," which does not match the official Bradesco domain (bradesco.com.br). This discrepancy raises a red flag.
+   - **Urgent Language**: The email uses urgent language, stating that points are expiring "today," which is a common tactic in phishing emails to create panic and prompt immediate action.
+   - **Implied Request for Information**: While it does not explicitly ask for personal information, the urgency to redeem points suggests that the recipient may need to provide sensitive information to do so.
+   - **Suspicious URLs**: The extracted URL (https://blog1seguimentmydomaine2bra.me/) appears suspicious and does not relate to Bradesco, indicating a potential phishing site.
+   - **Poor Grammar**: The email contains several grammatical errors and awkward phrasing, which is typical of phishing attempts.
+   - **Generic Greetings**: The email lacks a personalized greeting, addressing the recipient generically, which is common in phishing emails.
+   - **Authentication Failures**: The SPF and DKIM failures indicate that the email did not pass standard email authentication checks, further suggesting it may not be legitimate.
+
+5. **Recommended Action**:
+   - The recipient should **not click any links** or provide any personal information in response to this email. 
+   - They should report the email as phishing to their email provider and delete it.
+   - If they have any concerns about their Bradesco account, they should contact Bradesco directly using official contact methods (e.g., their official website or customer service number) to verify any claims made in the email.
+
+================================================================================
+
+EMAIL 2
+================================================================================
+File: email/sample-10.eml
+Subject: Microsoft account unusual signin activity
+From: "Microsoft account team", _ <no-reply@access-accsecurity.com>
+
+ANALYSIS:
+--------------------------------------------------------------------------------
+### Phishing Email Analysis
+
+1. **Phishing Risk Score**: 85
+2. **Risk Level**: HIGH
+
+3. **Indicators Found**:
+   - Suspicious sender domain (access-accsecurity.com does not match Microsoft)
+   - Urgent or threatening language (implied urgency regarding unusual sign-in)
+   - Requests for personal/financial information (implied need to report unusual activity)
+   - Suspicious URLs (link to an unknown domain: thebandalisty.com)
+   - Poor grammar or spelling (inconsistent capitalization, awkward phrasing)
+   - Generic greetings (no personalized greeting)
+   - SPF/DKIM authentication failures (SPF=none, DKIM=none)
+   - Spoofed sender addresses (Return-Path indicates a different domain: thcultarfdes.co.uk)
+
+4. **Explanation**:
+   - The sender's domain, `access-accsecurity.com`, does not match Microsoft's official domain, which raises immediate suspicion. Legitimate emails from Microsoft would come from domains like `@microsoft.com`.
+   - The email uses urgent language, suggesting that the recipient must act quickly to secure their account, a common tactic in phishing attempts.
+   - The email implies that the recipient should report unusual activity, which can lead to the disclosure of personal information if the recipient follows the instructions.
+   - The URL provided in the email points to an unknown domain (`thebandalisty.com`), which is not associated with Microsoft and could potentially lead to a phishing site.
+   - The email contains poor grammar and awkward phrasing, which is often indicative of phishing attempts.
+   - The greeting is generic, addressing the recipient as "you" without any personalization, which is typical in phishing emails.
+   - The email fails SPF and DKIM checks, indicating that it is not properly authenticated and likely spoofed.
+   - The Return-Path header shows a different domain (`thcultarfdes.co.uk`), further suggesting that the email is not from a legitimate source.
+
+5. **Recommended Action**:
+   - The recipient should **not click any links** or provide any personal information in response to this email.
+   - They should **mark the email as spam** or phishing in their email client.
+   - It is advisable to **change their Microsoft account password** if they have any concerns about their account security.
+   - The recipient should also consider enabling two-factor authentication on their Microsoft account for added security.
+   - If they have any doubts, they should contact Microsoft directly through official channels to verify any claims made in the email.
+
+================================================================================
+
+EMAIL 3
+================================================================================
+File: email/sample-100.eml
+Subject: 🔋 Zonnepanelen voor een goede prijs 
+From: Zonnepanelen installateur <zonnepaneel@appjj.serenitepure.fr>
+
+ANALYSIS:
+--------------------------------------------------------------------------------
+### Phishing Email Analysis
+
+1. **Phishing Risk Score**: 85
+2. **Risk Level**: HIGH
+3. **Indicators Found**:
+   - Suspicious sender domain (appjj.serenitepure.fr does not match the claimed organization)
+   - Urgent or threatening language (implied urgency in the subject line)
+   - Requests for personal/financial information (implied by the nature of the email)
+   - Suspicious URLs or mismatched links (links lead to a tracking domain)
+   - Poor grammar or spelling (HTML code visible in the email body)
+   - Generic greetings (no personalized greeting)
+   - SPF/DKIM authentication failures (SPF and DKIM checks failed)
+   - Spoofed sender addresses (Return-Path indicates a different domain)
+
+4. **Explanation**:
+   - The sender's email address (zonnepaneel@appjj.serenitepure.fr) does not match a legitimate organization associated with solar panel installation, raising suspicion about the authenticity of the email.
+   - The subject line suggests a promotional offer, which can often be a tactic used in phishing attempts to create urgency or excitement.
+   - The email body contains HTML code rather than a clear message, indicating a lack of professionalism and potentially hiding malicious content.
+   - The URLs extracted from the email point to a tracking domain (go.nltrck.com), which is often used in phishing attempts to track clicks and gather information without the recipient's consent.
+   - The email fails SPF and DKIM checks, indicating that the sender's domain is not authorized to send emails on behalf of the claimed organization, which is a strong indicator of phishing.
+   - The lack of personalized greetings and the presence of generic language further suggest that this email is not from a legitimate source.
+
+5. **Recommended Action**:
+   - The recipient should **not click on any links** or respond to the email. 
+   - It is advisable to **mark the email as spam** or phishing in their email client.
+   - If any personal or financial information was shared in response to this email, the recipient should take immediate steps to secure their accounts and monitor for any unauthorized activity.
+   - Consider reporting the email to the appropriate authorities or the IT department if this is a work email.
+
+================================================================================
+
+EMAIL 4
+================================================================================
+File: email/sample-1000.eml
+Subject: Binance Cybersecurity
+From: info@libreriacies.es
+
+ANALYSIS:
+--------------------------------------------------------------------------------
+### Phishing Email Analysis
+
+1. **Phishing Risk Score**: 85
+2. **Risk Level**: HIGH
+
+3. **Indicators Found**:
+   - Suspicious sender domain (info@libreriacies.es does not match Binance)
+   - Urgent or threatening language (implied urgency in the subject)
+   - Requests for personal/financial information (implied by the context of "Binance Cybersecurity")
+   - Suspicious URLs or mismatched links (links to axobox.com)
+   - Poor grammar or spelling (not explicitly shown in the provided text, but the URL structure suggests a lack of professionalism)
+   - Generic greetings (not present, but the email lacks personalization)
+   - Unexpected attachments (none, but the email is suspicious overall)
+   - SPF/DKIM authentication failures (DKIM not signed)
+   - Spoofed sender addresses (sender domain does not match the claimed organization)
+   - Too-good-to-be-true offers (implied by the context of cybersecurity alerts)
+
+4. **Explanation**:
+   - The sender's email address (info@libreriacies.es) does not match the legitimate domain of Binance, which raises a red flag. Legitimate communications from Binance would come from a domain ending in "binance.com".
+   - The subject line "Binance Cybersecurity" suggests an urgent matter, which is a common tactic used in phishing emails to provoke immediate action from the recipient.
+   - The email body contains a suspicious URL (https://axobox.com/vt/wp-track.php), which does not appear to be related to Binance and could potentially lead to a phishing site or malware.
+   - The lack of DKIM signing indicates that the email may not have been verified as coming from the claimed sender, further increasing the risk of phishing.
+   - The overall presentation of the email, including the suspicious links and the sender's domain, suggests that this is likely a phishing attempt aimed at tricking the recipient into providing personal or financial information.
+
+5. **Recommended Action**:
+   - The recipient should **not click on any links** or provide any personal or financial information in response to this email.
+   - It is advisable to **mark the email as spam** or phishing in their email client.
+   - The recipient should consider contacting Binance directly through their official website or customer support channels to verify if there are any legitimate communications regarding cybersecurity.
+   - Additionally, the recipient should ensure their security software is up to date and consider changing passwords for any accounts that may be at risk.
+
+================================================================================
+
+EMAIL 5
+================================================================================
+File: email/sample-1001.eml
+Subject: [Aܿlܿeܿrt] Coܿnfܿiܿrm yoܿur iܿnfo is rܿeqܿuiredܿ [Cܿaܿse ID 153465]
+From: "support@mail.coinbase.com" <mssggeauthencti-cbspprt-325937197367@medisept.com.au>
+
+ANALYSIS:
+--------------------------------------------------------------------------------
+### Phishing Email Analysis
+
+1. **Phishing Risk Score**: 95
+2. **Risk Level**: CRITICAL
+
+3. **Indicators Found**:
+   - Suspicious sender domain (doesn't match claimed organization)
+   - Urgent or threatening language
+   - Requests for personal/financial information (implied)
+   - Poor grammar or spelling
+   - Generic greetings
+   - Unexpected attachments
+   - SPF/DKIM authentication failures
+   - Spoofed sender addresses
+
+4. **Explanation**:
+   - **Suspicious Sender Domain**: The email claims to be from "support@mail.coinbase.com," but the actual sender address is "mssggeauthencti-cbspprt-325937197367@medisept.com.au," which does not match the claimed domain. This is a strong indicator of phishing.
+   - **Urgent Language**: The subject line contains the word "Alert" and requests confirmation of information, which creates a sense of urgency that is often used in phishing attempts.
+   - **Requests for Personal/Financial Information**: While the email does not explicitly ask for personal information in the body provided, the context implies that the recipient is expected to confirm their information, which is a common tactic in phishing.
+   - **Poor Grammar or Spelling**: The subject line contains unusual characters and formatting (e.g., "Aܿlܿeܿrt" and "Coܿnfܿiܿrm"), which is often a sign of phishing emails.
+   - **Generic Greetings**: The email body starts with "Coinbase Support," which is generic and does not address the recipient by name, a common characteristic of phishing emails.
+   - **Unexpected Attachments**: The email includes an attachment titled "Coinbase -15392.docx," which is suspicious as legitimate organizations typically do not send unsolicited attachments.
+   - **SPF/DKIM Authentication Failures**: The email fails SPF checks and does not have DKIM signatures, indicating that it is not properly authenticated and likely spoofed.
+   - **Spoofed Sender Addresses**: The return path and sender address do not match the legitimate Coinbase domain, indicating that the email is likely spoofed.
+
+5. **Recommended Action**:
+   - The recipient should **immediately delete the email** without opening any attachments or clicking on any links. 
+   - They should **report the email** to their email provider and to Coinbase directly through their official website to alert them of the phishing attempt.
+   - It is advisable to **monitor any accounts** associated with Coinbase for unusual activity and consider changing passwords if there is any concern that personal information may have been compromised.
+
+================================================================================
