@@ -1,4 +1,5 @@
 # Email Similarity Search - Quick Start Guide
+## Outputs can be found in the outputs folder.
 
 ## What This Does
 
@@ -102,3 +103,4 @@ Para visualizar as imagens deste email. Clique aqui Pontos Livelo...
 - Similarity scores closer to 1.0 indicate higher similarity
 - The first result may be the query email itself if it exists in the database
 - Emails are deduplicated by source file path
+
